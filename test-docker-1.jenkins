@@ -17,9 +17,9 @@ pipeline {
         stage('Create docker image') {
             steps {
                 echo '---=====Start building docker image=====---'
-                dir ('docker') {
+
                     sh 'docker build .'
-                }
+                
                 
             }
         }
